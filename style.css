@@ -1,0 +1,84 @@
+CSS
+/* Configuracões Globais e Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2e7d32; /* Verde Acessível */
+    --primary-light: #4caf50;
+    --dark-color: #212121;
+    --light-color: #f5f5f5;
+    --white: #ffffff;
+    --text-color: #333333;
+    --font-base: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-base);
+    color: var(--text-color);
+    background-color: var(--white);
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.bg-light {
+    background-color: var(--light-color);
+}
+
+.text-center {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1, h2, h3 {
+    color: var(--dark-color);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Barra de Acessibilidade */
+.accessibility-bar {
+    background-color: #111;
+    padding: 5px 5%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.accessibility-bar button {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    border-radius: 4px;
+}
+
+.accessibility-bar button:focus {
+    outline: 2px solid var(--primary-light);
+}
+
+/* Cabeçalho e Menu Hamburguer */
+.main-header {
+    background-color: var(--white);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1
